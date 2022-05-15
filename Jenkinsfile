@@ -1,8 +1,8 @@
 pipeline {
 
-//     agent {
-//         label 'master'
-//     }
+    agent {
+        label 'master'
+    }
 
     environment {
         image = "pontakorn322/demo-nodejs"
