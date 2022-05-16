@@ -4,7 +4,7 @@ services:
     web-node-js:
         image: pontakorn322/demo-nodejs
         ports:
-            - "3000:3000"
+            - "3001:3001"
         environment:
             - MONGODB_ADDON_URI=mongodb://mongodb:27017/test
     mongodb:
