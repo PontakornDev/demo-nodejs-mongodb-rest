@@ -44,8 +44,10 @@ pipeline {
 
         stage('Deployment'){
             steps {
-                sh "docker info"
-                sh "docker-compose up -d"
+                sh '''
+                docker compose version
+                docker compose up -d
+                '''
             }
             
         }
