@@ -44,6 +44,7 @@ pipeline {
 
         stage('Deployment'){
             steps {
+                sh "docker info"
                 sh "docker-compose up -d"
             }
             
